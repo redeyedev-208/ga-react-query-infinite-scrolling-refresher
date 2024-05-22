@@ -57,6 +57,9 @@ export function InfiniteSpecies() {
                     boxShadow: 6,
                   },
                 }}
+                role='article'
+                aria-label={`Species: ${species.fields.name}`}
+                tabIndex={0}
               >
                 <CardContent>
                   <Typography

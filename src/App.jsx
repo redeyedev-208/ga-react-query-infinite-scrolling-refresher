@@ -13,16 +13,16 @@ function App() {
         <Box
           display='flex'
           flexDirection='column'
-          alignItems='stretch' // Ensure children take full width
+          alignItems='stretch'
           justifyContent='center'
           minHeight='100vh'
-          width='100%' // Ensure Box takes full width
+          width='100%'
         >
           <Card
             sx={{
               position: 'sticky',
               top: 0,
-              zIndex: 1000, // Ensure it stays on top
+              zIndex: 1000,
               mb: 2,
               p: 2,
               borderRadius: 2,
@@ -41,7 +41,7 @@ function App() {
                 variant='h2'
                 component='h1'
                 gutterBottom
-                textAlign='center' // Center the text
+                textAlign='center'
               >
                 Star Wars Scrolling
               </Typography>

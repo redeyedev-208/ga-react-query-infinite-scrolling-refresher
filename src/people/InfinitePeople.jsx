@@ -56,13 +56,16 @@ export function InfinitePeople() {
                   borderRadius: 2,
                   boxShadow: 3,
                   backgroundColor: 'background.paper',
-                  transform: 'scale(1)',
+                  transform: 'scale(1)',  
                   transition: 'transform 0.2s',
                   '&:hover': {
                     transform: 'scale(1.05)',
                     boxShadow: 6,
                   },
                 }}
+                role='article'
+                aria-label={`People: ${person.fields.name}`}
+                tabIndex={0}
               >
                 <CardContent>
                   <Typography
