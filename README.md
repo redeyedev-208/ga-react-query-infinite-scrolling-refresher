@@ -22,3 +22,6 @@ So if as an engineer/developer you are given designs that look cool, and are onl
 ___
 ![star-wars-scrolling-a11y-compliant](https://github.com/redeyedev-208/ga-react-query-infinite-scrolling-refresher/assets/60634649/d7e04295-c473-4c98-83f2-f29a6244a808)
 
+<b>Live site</b>
+[star wars infinite scrolling with mui and react-query](https://ga-react-query-infinite-scrolling.netlify.app/)
+
