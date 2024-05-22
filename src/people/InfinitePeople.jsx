@@ -1,9 +1,6 @@
 import InfiniteScroll from 'react-infinite-scroller';
 import { useInfiniteQuery } from '@tanstack/react-query';
-
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
+import { Card, CardContent, Typography } from '@mui/material';
 
 const baseUrl = 'https://swapi-node.vercel.app';
 const initialUrl = baseUrl + '/api/people/';
@@ -53,7 +50,19 @@ export function InfinitePeople() {
             return (
               <Card
                 key={person.fields.name}
-                sx={{ mb: 2, width: '100%' }}
+                sx={{
+                  mb: 2,
+                  width: '100%',
+                  borderRadius: 2,
+                  boxShadow: 3,
+                  backgroundColor: 'background.paper',
+                  transform: 'scale(1)',
+                  transition: 'transform 0.2s',
+                  '&:hover': {
+                    transform: 'scale(1.05)',
+                    boxShadow: 6,
+                  },
+                }}
               >
                 <CardContent>
                   <Typography
